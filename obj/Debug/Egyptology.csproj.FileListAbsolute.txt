@@ -1,0 +1,5 @@
+D:\Users\adel\Documents\Visual Studio 2010\Projects\Egyptology\Egyptology\bin\Egyptology.dll
+D:\Users\adel\Documents\Visual Studio 2010\Projects\Egyptology\Egyptology\bin\Egyptology.pdb
+D:\Users\adel\Documents\Visual Studio 2010\Projects\Egyptology\Egyptology\obj\Debug\Egyptology.csprojResolveAssemblyReference.cache
+D:\Users\adel\Documents\Visual Studio 2010\Projects\Egyptology\Egyptology\obj\Debug\Egyptology.dll
+D:\Users\adel\Documents\Visual Studio 2010\Projects\Egyptology\Egyptology\obj\Debug\Egyptology.pdb

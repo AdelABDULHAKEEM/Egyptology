@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Egyptology.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="Styles/Home.css" rel="stylesheet"/>
+    <link href="Styles/box-icons/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="Styles/bootstrap.min.css" />
+    <script src="Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="Scripts/popper.min.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Scripts/main.js" type="text/javascript"></script>
+    <link href="Owl Carousel/owl.carousel.min.css.css" rel="stylesheet" />
+    <link href="Owl Carousel/owl.theme.default.min.css" rel="stylesheet" />
+    <script src="Owl Carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet"/> 
+    <link href="Styles/Content.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <!--upper-bar-->
+<div class="upper-bar">
+<div class="container">
+<div class="row ">
+    <div class="info col-sm  text-md-left">
+       <img src="img/log.jpg" alt="" /> 
+    </div>
+<div class="second col-sm ">
+<i class="fa fa-phone"></i><span> 01019778693 </span>&nbsp;,&nbsp;<i class="fa fa-envelope"></i>  adel20142658@gmail.com
+</div>
+<nav class="info   navbar navbar-dark default-color text-center ">
+  <form class="form-inline" action="Home.aspx" role="search" method="get" >
+    <div class="md-form my-0">
+      <input class="form-control" type="text" placeholder="Search----" aria-label="Search">
+    </div>
+  <i class="fa fa-search" style="margin-left:10px;"></i>
+  </form>
+</nav>
+</div>
+</div>
+</div>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container">
+  <a class="navbar-brand" href="#">
+  <span>Egypt</span><span>ology</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link"  href="Home.aspx" ><i class="fa fa-home"></i>Home</a>
+        
+              
+      </li>
+      <li class="nav-item active">
+        <asp:HyperLink class="nav-link" NavigateUrl="~/Log in.aspx" runat="server" ID="SignIn"><i class="fa fa-sign-in"></i><span class="sr-only">(current)</span>Login</asp:HyperLink>
+      </li>
+        <li class="nav-item">        
+        <asp:HyperLink class="nav-link" NavigateUrl="~/Sign Up.aspx" runat="server" ID="SignUP"><i class="fa fa-user"></i>Signup</asp:HyperLink>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Contact us.aspx"><i class="fa fa-phone"></i>Contact US</a>
+      </li> 
+        <li class="nav-item">
+        <a class="nav-link" href="AboutUS.aspx"><i class="fa fa-info-circle"></i>About US</a>
+        </li>
+         <li class="nav-item">
+        <a class="nav-link" href="Booking.aspx" style="color:Red;"><i class="fa fa-shopping-cart"></i>Booking</a>
+        </li>
+        <li class="nav-item" style="padding:0px 15px;">
+      <asp:HyperLink NavigateUrl="~/User_Details.aspx" runat="server"><asp:Image style="border-radius: 50%;" ID="imguserPic" runat="server" Height="70px" Width="90px"  title="User profile" /> </asp:HyperLink>
+        </li>
+        <li class="nav-item">
+        <asp:HyperLink class="nav-link"  NavigateUrl="~/Log in.aspx" runat="server" ForeColor="red" ID="LogOut"><i class="fa fa-sign-out"></i>LogOut</asp:HyperLink>
+        </li>
+    </ul>
+  </div>
+  </div>  
+</nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       
+    <!-- footer -->
+    <div class="footer">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+    <div class="site-info">
+    <h2><span>Egypt</span><span>ology</span></h2>
+        <p>Ancient Egyptian art refers art produced in ancient Egypt between the 31st century BC and the 4th century AD. It includes paintings, sculptures, drawings on papyrus, faience, jewelry, ivories, architecture<span id="dots">...</span><span id="more"> and other art media. It is also very conservative: the art style changed very little over time. Much of the surviving art comes from tombs and monuments, giving more insight into the Egyptians' belief of the afterlife.</span></p>
+    <a onclick="myFunction()" id="myBtn">Read more</a>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="helpful-links">
+    <h2>Helpful Links</h2>
+    <div class="row">
+    <div class="col">
+    <ul class="list-unstyled">
+    <li>About</li>
+     <li>Portofolio</li>
+      <li>Team</li>
+       <li>price</li>
+        <li>Privacy</li>
+        </ul>
+        </div>
+          <div class="col">
+    <ul class="list-unstyled">
+    <li>FAQ</li>
+     <li>Blog</li>
+      <li>How It Work</li>
+       <li>Benefits</li>
+        <li>Contact</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="contact">
+    <h1>Contact US</h1>
+      <ul class="list-unstyled">
+    <li>Adress : Egypt-cairo</li>
+     <li>Phone : +022486982</li>
+      <li>Email :<a href="mailto:adel20142658@gmail.com?subject=contact">adel20142658@gmail.com</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="copyright">
+    <div class="container">
+    <div class="row">
+    <div class="col text-left">
+    <h6>Copyright 2020 Egyptology &copy; All Right Reserved</h6>
+    </div>
+    <div class="col text-right">
+  <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

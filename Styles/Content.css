@@ -1,0 +1,520 @@
+﻿ 
+ .remove
+ {
+     display:none;
+ }
+ 
+ /* * * * * Log In page Style * * * * */
+
+.login_wrapper {
+  border:2px solid #e7e7e7;
+  padding:55px;
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+      
+
+}
+
+.login_container {
+  position: relative;
+  width: 898px;
+  height: 485px;
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0 0 5px #999999;
+}
+
+
+.col-left,
+.col-right {
+  padding: 30px;
+  display: flex;
+}
+
+.col-left {
+   width: 78%;
+   padding: 119px 64px;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background: #08526d;
+}
+
+.col-right {
+  padding: 167px 33px;
+    width:50%;
+  margin-left: -10%;
+}
+
+@media(max-width: 575.98px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .col-left,
+  .col-right {
+    width: 100%;
+    margin: 0;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .col-right {
+    padding: 30px;
+  }
+}
+
+.login-text {
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+}
+
+.login-text h2 {
+  margin: 0 0 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.login-text p {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.login-text .btn {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #ffffff;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+.login-text .btn:hover {
+  color: #44c7f5;
+  box-shadow: inset 150px 0 0 0 #ffffff;
+}
+
+.login-form {
+  position: relative;
+  width: 100%;
+}
+
+.login-form h2 {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.login-form p {
+  margin: 0 0 10px 0;
+  text-align: left;
+  color: #666666;
+  font-size: 15px;
+}
+
+.login-form p:last-child {
+  margin: 0;
+  padding-top: 3px;
+}
+
+.login-form p a {
+  color: #44c7f5;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 2px;
+  letter-spacing: .5px;
+}
+
+.login-form p:last-child label {
+  width: 60%;
+  float: left;
+}
+
+.login-form label span {
+  color: #ff574e;
+  padding-left: 2px;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+}
+
+.login-form input:focus {
+  border-color: #ff574e;
+}
+
+.login-form button,
+.login-form input {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+  color: #44c7f5;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #44c7f5;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 0 #44c7f5;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+.login-form button:hover,
+.login-form input:hover {
+  color: #ffffff;
+  box-shadow: inset 250px 0 0 0 #44c7f5;
+}   
+
+ /* * * * * Sign Up page Style * * * * */
+.SignUp
+{
+      border:2px solid #e7e7e7;
+}
+.holder
+{
+    
+    width: 700px;
+    background: #fff;
+    margin: 50px auto;
+    outline: 5px solid #08526d;
+}
+.holder .parent{
+    background-color: white;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 7px;
+}
+.holder .parent h3{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+    font-family:Arial;
+}
+.SignUp_Form{
+    display: block;
+    border-bottom: 1px dashed #ccc;
+    margin-left: 22px;
+    margin-right: 20px;
+}
+.SignUp_Form > div{
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+
+.SignUp_Form div input{
+    border: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+div input + .border{
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    background-color: #3498db;
+    height: 1px;
+    width: 0;
+    transition: .3s;
+    display: block;
+}
+div input:focus + .border{
+    width: 100%;
+    left: 0;
+}
+.SignUp_Form .private-inp{
+    border: none;
+    font-family: "work sans",sans-serif;
+    display: block;
+    margin: auto;
+    background: #2196f3;
+    width: 90%;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.SignUp_Form p{
+    margin: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+  
+}
+.SignUp_Form p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2196f3ed;
+}
+.parent h4{
+    text-align: center;
+    color: #777;
+}
+
+:focus::placeholder{
+    opacity: 0;
+    transition: .5s;
+}
+
+ /* * * * * About US page Style * * * * */
+
+.about-section{
+    background: url('../img/Bazar_IMG.jpg') no-repeat left;
+    background-size: 50%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 50%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+    margin:20px 10px 0px;
+    z-index:9999px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+
+ /* * * * * Forget Password page Style * * * * */
+ 
+
+ .forg-form {
+  background-color: rgba(20, 120, 200, 0.6);
+  color: #fff;
+  text-align: center;
+ padding: 87px;
+  width: 50%;
+  margin: 2em	auto;
+  border-radius: 5px; 
+  }
+  .forg-form h1 {
+    font-size: 2.5em; 
+    }
+  .forg-form .form-group {
+    margin: 0.5em 0; 
+    }
+    .row .form-group label {
+      display: block;
+      color: #fff;
+      text-align: left;
+      font-weight: 600; 
+      }
+    .forg-form .form-group input, .forg-form .form-group button {
+      display: block;
+      padding: 0.5em 0;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      background-color: inherit;
+      border: 2px solid #dee2e6;
+      color: #fff;
+      width:300px;
+      border-radius: 5px; 
+       }
+      
+     
+        
+        
+    .forg-form .form-group button {
+      border: 1px solid #fff;
+      border-radius: 5px;
+      outline: none;
+      -moz-user-select: none;
+      user-select: none;
+      color: #333;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 2em;
+      padding: 1em; 
+      }
+      
+      .forg-form .form-group button:hover, .forg-form .form-group button:focus {
+        background-color: #fff; 
+        }
+        
+      .forg-form .form-group button.is-loading::after {
+        animation: spinner 500ms infinite linear;
+        content: "";
+        position: absolute;
+        margin-left: 2em;
+        border: 2px solid #000;
+        border-radius: 100%;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        height: 1em;
+        width: 4%;
+         }
+         
+ 
+
+
+/******** profile details style***********/
+
+.User_Details
+{
+    padding: 20px;
+    background-color: #e7e7e7;
+    position: relative;
+    margin: 10px;
+    text-align: justify;
+    
+}
+.User_Details h2
+{
+    font-weight: 400;
+    font-family: 'FontAwesome';
+    padding: 14px 0px;
+}
+.User_Details .user_info
+{
+    padding: 15px 10px;
+    font-size: 19px;
+    font-family: -webkit-body;
+}
+
+/**** Booking_Style     *****/
+
+.cart-container {
+  border:1px solid #E0E4CC;
+  border-radius:5px;
+  margin-top:1em;
+  padding:1em;
+}
+.product_list button,.cart-container button , input[type="submit"] { 
+    border:1px solid #00a4ff; 
+    color:#fff; 
+    background: #00a4ff; 
+    padding:0.6em 1em;
+    font-size:1em; 
+    line-height:1; 
+    border-radius: 1.2em;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    width:100%;
+}
+button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+    background: #A7DBD8;
+    border-color:#69D2E7;
+    color:#000;
+    cursor: pointer;
+}
+table {
+  margin-bottom:1em;
+  border-collapse:collapse;
+}
+table td, table th {
+  text-align:left;
+  padding:0.25em 1em;
+  border-bottom:1px solid #E0E4CC;
+  font-weight:500;
+}
+#carttotals {
+  margin-right:0;
+  margin-left:auto;
+}
+.cart-buttons {
+  width:auto;
+  margin-right:0;
+  margin-left:auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:1em 0;
+}
+#emptycart {
+  margin-right:1em;
+}
+table td:nth-last-child(1) {
+  text-align:right;
+}
+.message {
+  border-width: 1px 0px;
+  border-style:solid;
+  border-color:#A7DBD8;
+  color:#679996;
+  padding:0.5em 0;
+  margin:1em 0;
+}
+
+.Booking_Button
+{
+    padding:20px;
+    
+}
+
