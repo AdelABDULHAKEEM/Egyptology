@@ -22,14 +22,14 @@
         </p>
           <p>
             <label>Username<span>*</span></label>
-            <asp:TextBox id="input1" type="text" placeholder="Username" runat="server" required/>
+            <asp:TextBox id="username" type="text" placeholder="Username" runat="server" required/>
           </p>
           <p>
             <label>Password<span>*</span></label>
-            <asp:TextBox id="input2"  type="password" placeholder="Password" TextMode="Password" runat="server" required />
+            <asp:TextBox id="password"  type="password" placeholder="Password" TextMode="Password" runat="server" required />
           </p>
           <p>
-              <asp:Button ID="Button1" runat="server" Text="Sign" onclick="Button1_Click" />
+              <asp:Button ID="login" runat="server" Text="Sign" onclick="login_Click" />
           </p>
           <p>
             <a href="Forget_Password.aspx">Forget Password?</a>

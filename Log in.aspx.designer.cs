@@ -22,30 +22,30 @@ namespace Egyptology {
         protected global::System.Web.UI.WebControls.Label msg;
         
         /// <summary>
-        /// input1 control.
+        /// username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox input1;
+        protected global::System.Web.UI.WebControls.TextBox username;
         
         /// <summary>
-        /// input2 control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox input2;
+        protected global::System.Web.UI.WebControls.TextBox password;
         
         /// <summary>
-        /// Button1 control.
+        /// login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button login;
     }
 }

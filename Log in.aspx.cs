@@ -15,18 +15,25 @@ namespace Egyptology
             Session["UserName"] = null;
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void login_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Egyptology.mdf;Integrated Security=True;User Instance=True");
-            string qry = "select * from User_tbl where UserName='" + input1.Text + "' and Password='" + input2.Text + "'";
-            string UserName = input1.Text.Trim();
+            string qry = "select * from User_tbl where UserName='" + username.Text + "' and Password='" + password.Text + "'";
+            string UserName = username.Text.Trim();
             SqlCommand cmd = new SqlCommand(qry, con);
             con.Open();
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
-                Session["UserName"] = sdr["Email"].ToString(); ;
-                Response.Redirect("Home.aspx");
+                if (username.Text == "Admin6712")
+                {
+                    Response.Redirect("Admin.aspx");
+                }
+                else
+                {
+                    Session["UserName"] = sdr["Email"].ToString(); ;
+                    Response.Redirect("Home.aspx");
+                }
             }
             else
             {
